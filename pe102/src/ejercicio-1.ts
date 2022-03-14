@@ -54,12 +54,13 @@ export class Persona {
 }
 
 /**
- * PE-102 Clase Estudiante 
+ * PE-102 Clase Estudiante hereda de clase Persona
  * @class Estudiante tiene atributos de los alumnos
  * @param nombre del alumno
  * @param apellidos del alumno
  * @param fecha_de_nacimiento del alumno
  * @param genero del alumno
+ * @param email del alumno
  */
 export class Estudiante extends Persona {
     public email: string;
@@ -69,6 +70,13 @@ export class Estudiante extends Persona {
           this.email = email;
     }
 
+    setEmail(email: string) {
+        this.email = email;
+    }
+
+    getEmail(){
+        return this.email;
+    }
     
     
 }
@@ -78,5 +86,5 @@ persona.setNombre('Andrea María');
 console.log(persona)
 
 let estudiante = new Estudiante('Andrea', 'Calero', '08-04-2000', 'Mujer', 'alu0101202952@ull.edu.es');
-estudiante.setNombreE('Andrea María');
+estudiante.setNombre('Andrea Luisa');
 console.log(estudiante)
