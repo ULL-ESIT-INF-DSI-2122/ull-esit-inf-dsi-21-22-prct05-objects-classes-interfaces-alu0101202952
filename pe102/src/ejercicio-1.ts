@@ -135,10 +135,18 @@ export class Estudiante extends Persona {
           this.email = email;
     }
 
+    /**
+     * Setter email estudiante
+     * @param email 
+     */
     setEmail(email: string) {
         this.email = email;
     }
 
+    /**
+     * Getter email estudiante
+     * @returns email
+     */
     getEmail(){
         return this.email;
     }
