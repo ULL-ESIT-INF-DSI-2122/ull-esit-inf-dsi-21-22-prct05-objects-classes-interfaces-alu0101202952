@@ -12,5 +12,9 @@ describe('Persona', () => {
     it('persona.getApellidos() returns apellido de la persona', () => {
       return expect(persona.getApellidos()).to.be.equal('Calero');
     })
+
+    it('persona.getFNacimiento() returns apellido de la persona', () => {
+      return expect(persona.getFNacimiento()).to.be.equal('08-04-2000');
+    })
   
 });
