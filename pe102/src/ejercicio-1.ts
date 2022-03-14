@@ -46,4 +46,12 @@ export class Alumno implements Persona {
     getFNacimiento(){
         return this.fecha_de_nacimiento;
     }
+
+    setGenero(genero: string) {
+        this.genero = genero;
+    }
+
+    getGenero(){
+        return this.genero;
+    }
 }
