@@ -1,24 +1,13 @@
-export interface Persona {
+/*export class Persona {
     nombre: string;
     apellidos: string;
     fecha_de_nacimiento: string;
     genero: string;
-    /*sides?: number;
-    color: string;
-    getArea(): number;
-    print(): void;*/
+    
 
-}
+}*/
 
-/**
- * PE-102 Clase Alumno implementa interfaz persona
- * @class Alumno tiene atributos de los alumnos
- * @param nombre del alumno
- * @param apellidos del alumno
- * @param fecha_de_nacimiento del alumno
- * @param genero del alumno
- */
-export class Alumno implements Persona {
+export class Persona {
     constructor(private nombre: string, private apellidos: string,
       private fecha_de_nacimiento: string, private genero: string) {
     }
@@ -55,3 +44,23 @@ export class Alumno implements Persona {
         return this.genero;
     }
 }
+
+/**
+ * PE-102 Clase Alumno implementa interfaz persona
+ * @class Alumno tiene atributos de los alumnos
+ * @param nombre del alumno
+ * @param apellidos del alumno
+ * @param fecha_de_nacimiento del alumno
+ * @param genero del alumno
+ */
+/*export class Alumno implements Persona {
+    constructor(private nombre: string, private apellidos: string,
+      private fecha_de_nacimiento: string, private genero: string) {
+    }
+
+    
+}
+*/
+let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
+persona.setNombre('Andrea María');
+console.log(persona)
