@@ -65,6 +65,18 @@ export class Persona {
         return this.nombre_asignatura;
     }
 
+    setNombreAlumno(nombre_a: string) {
+        for (let i: number = 0; i < this.alumnos.length; i++) {
+            this.alumnos.push(nombre_a);
+        }
+    }
+
+    getNombreAlumno(){
+        this.alumnos.forEach(element => {
+            console.log(element);
+        });
+    }
+
 }
 
 
@@ -121,8 +133,6 @@ export class Estudiante extends Persona {
     getEmailP(){
         return this.email;
     }
-    
-    
 }
 
 let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
@@ -143,4 +153,10 @@ console.log(profesor)
 
 let asignatura = new Asignatura ('DSI', ['Andrea'], ['Juan']);
 asignatura.setNombreAsig('DesarrolloSI');
+console.log(asignatura)
+
+asignatura.setNombreAlumno('Ana');
+console.log(asignatura)
+
+asignatura.getNombreAlumno();
 console.log(asignatura)
