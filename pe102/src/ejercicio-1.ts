@@ -74,6 +74,14 @@ export class Estudiante extends Persona {
     getNombreE(){
         return this.nombre;
     }
+
+    setApellidosE(apellidos: string) {
+        this.apellidos = apellidos;
+    }
+
+    getApellidosE(){
+        return this.apellidos;
+    }
     
 }
 
