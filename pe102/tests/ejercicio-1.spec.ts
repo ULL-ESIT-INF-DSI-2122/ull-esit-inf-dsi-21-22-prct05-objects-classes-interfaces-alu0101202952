@@ -45,9 +45,9 @@ describe('Asignatura', () => {
   })
 
   it('asignatura.getNombreAlumno() returns nombre de los alumnos de la asignatura', () => {
-    return expect(asignatura.getNombreAlumno()).to.be.equal(['Andrea']);
+    return expect(asignatura.getNombreAlumno()).to.be.eql([ 'Andrea' ]);
   })
   it('asignatura.getNombreProfesor() returns nombre de los profesores de la asignatura', () => {
-    return expect(asignatura.getNombreProfesor()).to.be.equal(['Juan']);
+    return expect(asignatura.getNombreProfesor()).to.be.eql(['Juan']);
   })
 });
