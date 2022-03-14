@@ -1,12 +1,16 @@
 import 'mocha';
 import {expect} from 'chai';
-import {Persona} from '../src/ejercicio-1';
+import {Alumno, Persona} from '../src/ejercicio-1';
 
-let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
+let persona = new Alumno('Andrea', 'Calero', '08-04-2000', 'Mujer');
 
 describe('Persona', () => {
     it('persona.getNombre() returns nombre de la persona', () => {
         return expect(persona.getNombre()).to.be.equal('Andrea');
+    })
+
+    it('persona.getApellidos() returns apellido de la persona', () => {
+      return expect(persona.getApellidos()).to.be.equal('Calero');
     })
   
 });
