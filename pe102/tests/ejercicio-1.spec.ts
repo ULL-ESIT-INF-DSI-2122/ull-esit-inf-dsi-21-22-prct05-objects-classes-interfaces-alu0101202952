@@ -37,9 +37,9 @@ describe('Estudiante', () => {
   it('estudiante.getFNacimientoE() returns apellido del estudiante', () => {
     return expect(estudiante.getFNacimientoE()).to.be.equal('08-04-2000');
   })
-/*
-  it('persona.getGenero() returns apellido de la persona', () => {
-    return expect(persona.getGenero()).to.be.equal('Mujer');
+
+  it('estudiante.getGeneroE() returns apellido del estudiante', () => {
+    return expect(estudiante.getGeneroE()).to.be.equal('Mujer');
   })
-*/
+
 });
