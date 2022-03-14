@@ -31,4 +31,12 @@ export class Alumno implements Persona {
         return this.nombre;
     }
 
+    setApellidos(apellidos: string) {
+        this.apellidos = apellidos;
+    }
+
+    getApellidos(){
+        return this.apellidos;
+    }
+
 }
