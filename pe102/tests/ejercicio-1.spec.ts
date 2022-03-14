@@ -43,4 +43,8 @@ describe('Asignatura', () => {
   it('asignatura.getNombreAsig() returns nombre de la asignatura', () => {
       return expect(asignatura.getNombreAsig()).to.be.equal('DSI');
   })
+
+  it('asignatura.getNombreAlumno() returns nombre de los alumnos de la asignatura', () => {
+    return expect(asignatura.getNombreAlumno()).to.be.equal(['Andrea']);
+  })
 });
