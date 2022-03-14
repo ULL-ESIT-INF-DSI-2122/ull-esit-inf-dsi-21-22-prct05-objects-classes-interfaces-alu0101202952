@@ -11,35 +11,66 @@ export class Persona {
     constructor(private nombre: string, private apellidos: string,
       private fecha_de_nacimiento: string, private genero: string) {
     }
-
+    /**
+     * Setter Nombre Persona
+     * @param nombre 
+     */
     setNombre(nombre: string) {
         this.nombre = nombre;
     }
 
+    /**
+     * Getter Nombre persona
+     * @returns nombre
+     */
     getNombre(){
         return this.nombre;
     }
 
+    /**
+     * Setter Apellidos
+     * @param apellidos 
+     */
     setApellidos(apellidos: string) {
         this.apellidos = apellidos;
     }
 
+    /**
+     * Getter apellidos
+     * @returns apellidos
+     */
     getApellidos(){
         return this.apellidos;
     }
 
+    /**
+     * Setter fecha nacimiento
+     * @param fecha_de_nacimiento 
+     */
     setFNacimiento(fecha_de_nacimiento: string) {
         this.fecha_de_nacimiento = fecha_de_nacimiento;
     }
 
+    /**
+     * Getter Fecha nacimiento
+     * @returns fecha
+     */
     getFNacimiento(){
         return this.fecha_de_nacimiento;
     }
-
+    
+    /**
+     * Setter género
+     * @param genero 
+     */
     setGenero(genero: string) {
         this.genero = genero;
     }
 
+    /**
+     * Getter género
+     * @returns género
+     */
     getGenero(){
         return this.genero;
     }
@@ -171,18 +202,30 @@ export class Estudiante extends Persona {
           this.email = email;
     }
 
+    /**
+     * Setter email profesor
+     * @param email 
+     */
     setEmailP(email: string) {
         this.email = email;
     }
 
+    /**
+     * Getter email profesor
+     * @returns email
+     */
     getEmailP(){
         return this.email;
     }
 }
 
+/**
+ * Salidas por pantalla
+ */
 let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
 persona.setNombre('Andrea María');
 console.log(persona)
+
 
 let estudiante = new Estudiante('Andrea', 'Calero', '08-04-2000', 'Mujer', 'alu0101202952@ull.edu.es');
 estudiante.setNombre('Andrea Luisa');
@@ -190,11 +233,13 @@ console.log(estudiante)
 estudiante.setEmail('AndreaLuisa@gmail.com');
 console.log(estudiante)
 
+
 let profesor = new Profesor('Juan', 'Glez', '09-04-2000', 'Hombre', 'juan@ull.es');
 profesor.setNombre('Juan Lucas');
 console.log(profesor)
 profesor.setEmailP('JuanLucas@gmail.com');
 console.log(profesor)
+
 
 let asignatura = new Asignatura ('DSI', ['Andrea'], ['Juan']);
 asignatura.setNombreAsig('DesarrolloSI');
