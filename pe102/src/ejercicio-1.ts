@@ -1,11 +1,3 @@
-/*export class Persona {
-    nombre: string;
-    apellidos: string;
-    fecha_de_nacimiento: string;
-    genero: string;
-    
-
-}*/
 
 /**
  * PE-102 Clase Persona 
@@ -52,6 +44,29 @@ export class Persona {
         return this.genero;
     }
 }
+
+
+/**
+ * PE-102 Clase Asignatura
+ * @class Asinatura tiene atributos privados a los que se acceden
+ * @param nombre_asignatura de la asignatura
+ * @param 
+ */
+ export class Asignatura {
+    constructor(private nombre_asignatura: string, private alumnos: string [] = [],
+      private profesores: string [] = []) {
+    }
+
+    setNombreAsig(nombre_asignatura: string) {
+        this.nombre_asignatura = nombre_asignatura;
+    }
+
+    getNombreAsig(){
+        return this.nombre_asignatura;
+    }
+
+}
+
 
 /**
  * PE-102 Clase Estudiante hereda de clase Persona
@@ -117,13 +132,15 @@ console.log(persona)
 let estudiante = new Estudiante('Andrea', 'Calero', '08-04-2000', 'Mujer', 'alu0101202952@ull.edu.es');
 estudiante.setNombre('Andrea Luisa');
 console.log(estudiante)
-
 estudiante.setEmail('AndreaLuisa@gmail.com');
 console.log(estudiante)
 
 let profesor = new Profesor('Juan', 'Glez', '09-04-2000', 'Hombre', 'juan@ull.es');
 profesor.setNombre('Juan Lucas');
 console.log(profesor)
-
 profesor.setEmailP('JuanLucas@gmail.com');
 console.log(profesor)
+
+let asignatura = new Asignatura ('DSI', ['Andrea'], ['Juan']);
+asignatura.setNombreAsig('DesarrolloSI');
+console.log(asignatura)
