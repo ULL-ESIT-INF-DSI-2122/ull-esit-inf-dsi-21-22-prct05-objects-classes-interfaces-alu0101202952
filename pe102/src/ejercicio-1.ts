@@ -82,6 +82,14 @@ export class Estudiante extends Persona {
     getApellidosE(){
         return this.apellidos;
     }
+
+    setFNacimientoE(fecha_de_nacimiento: string) {
+        this.fecha_de_nacimiento = fecha_de_nacimiento;
+    }
+
+    getFNacimientoE(){
+        return this.fecha_de_nacimiento;
+    }
     
 }
 
