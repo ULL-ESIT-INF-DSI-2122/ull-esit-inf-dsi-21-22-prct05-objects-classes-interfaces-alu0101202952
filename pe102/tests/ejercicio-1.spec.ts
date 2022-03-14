@@ -5,7 +5,7 @@ import {Persona, Estudiante, Profesor, Asignatura} from '../src/ejercicio-1';
 let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
 let estudiante = new Estudiante('Andrea', 'Calero', '08-04-2000', 'Mujer', 'alu0101202952@ull.edu.es');
 let profesor = new Profesor('Juan', 'Glez', '09-04-2000', 'Hombre', 'juan@ull.es');
-let asignatura = new Asignatura ('DSI', ['Andrea'], ['Juan']);
+let asignatura = new Asignatura ('DSI', [estudiante], [profesor]);
 
 describe('Persona', () => {
     it('persona.getNombre() returns nombre de la persona', () => {
@@ -45,9 +45,9 @@ describe('Asignatura', () => {
   })
 
   it('asignatura.getNombreAlumno() returns nombre de los alumnos de la asignatura', () => {
-    return expect(asignatura.getNombreAlumno()).to.be.eql([ 'Andrea' ]);
+    return expect(asignatura.getNombreAlumno()).to.be.eql([estudiante]);
   })
   it('asignatura.getNombreProfesor() returns nombre de los profesores de la asignatura', () => {
-    return expect(asignatura.getNombreProfesor()).to.be.eql(['Juan']);
+    return expect(asignatura.getNombreProfesor()).to.be.eql([profesor]);
   })
 });

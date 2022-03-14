@@ -84,8 +84,8 @@ export class Persona {
  * @param 
  */
  export class Asignatura {
-    constructor(private nombre_asignatura: string, private alumnos: string [] = [],
-      private profesores: string [] = []) {
+    constructor(private nombre_asignatura: string, private alumnos: Estudiante [] = [],
+      private profesores: Profesor [] = []) {
     }
 
     /**
@@ -108,7 +108,7 @@ export class Persona {
      * Setter Nombre Alumnos de la asignatura
      * @param nombre_a 
      */
-    setNombreAlumno(nombre_a: string) {
+    setNombreAlumno(nombre_a: Estudiante) {
         for (let i: number = 0; i < this.alumnos.length; i++) {
             this.alumnos.push(nombre_a);
         }
@@ -129,7 +129,7 @@ export class Persona {
      * Setter Nombre profesores de la asignatura
      * @param nombre_p 
      */
-    setNombreProfesor(nombre_p: string) {
+    setNombreProfesor(nombre_p: Profesor) {
         for (let i: number = 0; i < this.profesores.length; i++) {
             this.profesores.push(nombre_p);
         }
@@ -241,7 +241,7 @@ profesor.setEmailP('JuanLucas@gmail.com');
 console.log(profesor)
 
 
-let asignatura = new Asignatura ('DSI', ['Andrea'], ['Juan']);
+let asignatura = new Asignatura ('DSI', [estudiante], [profesor]);
 asignatura.setNombreAsig('DesarrolloSI');
 console.log(asignatura)
 
