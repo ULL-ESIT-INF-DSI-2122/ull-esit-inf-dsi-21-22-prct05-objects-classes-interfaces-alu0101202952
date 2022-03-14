@@ -90,6 +90,14 @@ export class Estudiante extends Persona {
     getFNacimientoE(){
         return this.fecha_de_nacimiento;
     }
+
+    setGeneroE(genero: string) {
+        this.genero = genero;
+    }
+
+    getGeneroE(){
+        return this.genero;
+    }
     
 }
 
