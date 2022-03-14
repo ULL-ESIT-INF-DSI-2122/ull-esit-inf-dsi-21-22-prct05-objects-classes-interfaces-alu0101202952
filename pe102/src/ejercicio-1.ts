@@ -57,20 +57,36 @@ export class Persona {
       private profesores: string [] = []) {
     }
 
+    /**
+     * Setter Nombre Asignatura
+     * @param nombre_asignatura 
+     */
     setNombreAsig(nombre_asignatura: string) {
         this.nombre_asignatura = nombre_asignatura;
     }
 
+    /**
+     * Getter Nombre Asignatura
+     * @returns nombre_asignatura
+     */
     getNombreAsig(){
         return this.nombre_asignatura;
     }
 
+    /**
+     * Setter Nombre Alumnos de la asignatura
+     * @param nombre_a 
+     */
     setNombreAlumno(nombre_a: string) {
         for (let i: number = 0; i < this.alumnos.length; i++) {
             this.alumnos.push(nombre_a);
         }
     }
 
+    /**
+     * Getter Nombre Estudiantes
+     * @returns nombres estudiantes
+     */
     getNombreAlumno(){
         this.alumnos.forEach(element => {
             console.log(element);
@@ -78,12 +94,20 @@ export class Persona {
         return this.alumnos
     }
 
+    /**
+     * Setter Nombre profesores de la asignatura
+     * @param nombre_p 
+     */
     setNombreProfesor(nombre_p: string) {
         for (let i: number = 0; i < this.profesores.length; i++) {
             this.profesores.push(nombre_p);
         }
     }
 
+    /**
+     * Getter Nombre Profesores
+     * @returns nombres profesores
+     */
     getNombreProfesor(){
         this.profesores.forEach(element => {
             console.log(element);
