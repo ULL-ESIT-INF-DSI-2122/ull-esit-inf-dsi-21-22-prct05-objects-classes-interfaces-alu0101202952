@@ -1,9 +1,10 @@
 import 'mocha';
 import {expect} from 'chai';
-import {Persona, Estudiante} from '../src/ejercicio-1';
+import {Persona, Estudiante, Profesor} from '../src/ejercicio-1';
 
 let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
 let estudiante = new Estudiante('Andrea', 'Calero', '08-04-2000', 'Mujer', 'alu0101202952@ull.edu.es');
+let profesor = new Profesor('Juan', 'Glez', '09-04-2000', 'Hombre', 'juan@ull.es');
 
 describe('Persona', () => {
     it('persona.getNombre() returns nombre de la persona', () => {
@@ -29,5 +30,10 @@ describe('Estudiante', () => {
   it('estudiante.getEmail() returns email del alumno', () => {
       return expect(estudiante.getEmail()).to.be.equal('alu0101202952@ull.edu.es');
   })
+});
 
+describe('Profesor', () => {
+  it('profesor.getEmailP() returns email del profesor', () => {
+      return expect(profesor.getEmailP()).to.be.equal('juan@ull.es');
+  })
 });
