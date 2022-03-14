@@ -54,50 +54,22 @@ export class Persona {
 }
 
 /**
- * PE-102 Clase Alumno implementa interfaz persona
- * @class Alumno tiene atributos de los alumnos
+ * PE-102 Clase Estudiante 
+ * @class Estudiante tiene atributos de los alumnos
  * @param nombre del alumno
  * @param apellidos del alumno
  * @param fecha_de_nacimiento del alumno
  * @param genero del alumno
  */
 export class Estudiante extends Persona {
-    constructor(private nombre: string, private apellidos: string,
-      private fecha_de_nacimiento: string, private genero: string, private email: string) {
+    public email: string;
+    constructor(nombre: string, apellidos: string,
+      fecha_de_nacimiento: string, genero: string, email: string) {
           super(nombre, apellidos, fecha_de_nacimiento, genero);
+          this.email = email;
     }
 
-    setNombreE(nombre: string) {
-        this.nombre = nombre;
-    }
-
-    getNombreE(){
-        return this.nombre;
-    }
-
-    setApellidosE(apellidos: string) {
-        this.apellidos = apellidos;
-    }
-
-    getApellidosE(){
-        return this.apellidos;
-    }
-
-    setFNacimientoE(fecha_de_nacimiento: string) {
-        this.fecha_de_nacimiento = fecha_de_nacimiento;
-    }
-
-    getFNacimientoE(){
-        return this.fecha_de_nacimiento;
-    }
-
-    setGeneroE(genero: string) {
-        this.genero = genero;
-    }
-
-    getGeneroE(){
-        return this.genero;
-    }
+    
     
 }
 

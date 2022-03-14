@@ -26,20 +26,8 @@ describe('Persona', () => {
 
 
 describe('Estudiante', () => {
-  it('estudiante.getNombreE() returns nombre del alumno', () => {
-      return expect(estudiante.getNombreE()).to.be.equal('Andrea');
-  })
-
-  it('estudiante.getApellidosE() returns apellido del estudiante', () => {
-    return expect(estudiante.getApellidosE()).to.be.equal('Calero');
-  })
-
-  it('estudiante.getFNacimientoE() returns apellido del estudiante', () => {
-    return expect(estudiante.getFNacimientoE()).to.be.equal('08-04-2000');
-  })
-
-  it('estudiante.getGeneroE() returns apellido del estudiante', () => {
-    return expect(estudiante.getGeneroE()).to.be.equal('Mujer');
+  it('estudiante.getEmail() returns email del alumno', () => {
+      return expect(estudiante.getEmail()).to.be.equal('alu0101202952@ull.edu.es');
   })
 
 });
