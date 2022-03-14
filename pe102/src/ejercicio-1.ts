@@ -39,4 +39,11 @@ export class Alumno implements Persona {
         return this.apellidos;
     }
 
+    setFNacimiento(fecha_de_nacimiento: string) {
+        this.fecha_de_nacimiento = fecha_de_nacimiento;
+    }
+
+    getFNacimiento(){
+        return this.fecha_de_nacimiento;
+    }
 }
