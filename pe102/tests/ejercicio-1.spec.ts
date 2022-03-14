@@ -26,14 +26,14 @@ describe('Persona', () => {
 
 
 describe('Estudiante', () => {
-  it('persona.getNombreE() returns nombre de la persona', () => {
-      return expect(persona.getNombreE()).to.be.equal('Andrea');
-  })
-/*
-  it('persona.getApellidosE() returns apellido de la persona', () => {
-    return expect(persona.getApellidos()).to.be.equal('Calero');
+  it('estudiante.getNombreE() returns nombre del alumno', () => {
+      return expect(estudiante.getNombreE()).to.be.equal('Andrea');
   })
 
+  it('estudiante.getApellidosE() returns apellido del estudiante', () => {
+    return expect(estudiante.getApellidosE()).to.be.equal('Calero');
+  })
+/*
   it('persona.getFNacimiento() returns apellido de la persona', () => {
     return expect(persona.getFNacimiento()).to.be.equal('08-04-2000');
   })

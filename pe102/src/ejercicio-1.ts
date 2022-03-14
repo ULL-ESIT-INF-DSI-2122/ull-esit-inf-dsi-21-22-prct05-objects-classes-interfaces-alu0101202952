@@ -7,6 +7,14 @@
 
 }*/
 
+/**
+ * PE-102 Clase Persona 
+ * @class Persona tiene atributos privados a los que se acceden
+ * @param nombre del alumno
+ * @param apellidos del alumno
+ * @param fecha_de_nacimiento del alumno
+ * @param genero del alumno 
+ */
 export class Persona {
     constructor(private nombre: string, private apellidos: string,
       private fecha_de_nacimiento: string, private genero: string) {
@@ -53,14 +61,26 @@ export class Persona {
  * @param fecha_de_nacimiento del alumno
  * @param genero del alumno
  */
-/*export class Alumno implements Persona {
+export class Estudiante extends Persona {
     constructor(private nombre: string, private apellidos: string,
-      private fecha_de_nacimiento: string, private genero: string) {
+      private fecha_de_nacimiento: string, private genero: string, private email: string) {
+          super(nombre, apellidos, fecha_de_nacimiento, genero);
     }
 
+    setNombreE(nombre: string) {
+        this.nombre = nombre;
+    }
+
+    getNombreE(){
+        return this.nombre;
+    }
     
 }
-*/
+
 let persona = new Persona('Andrea', 'Calero', '08-04-2000', 'Mujer');
 persona.setNombre('Andrea María');
 console.log(persona)
+
+let estudiante = new Estudiante('Andrea', 'Calero', '08-04-2000', 'Mujer', 'alu0101202952@ull.edu.es');
+estudiante.setNombreE('Andrea María');
+console.log(estudiante)
