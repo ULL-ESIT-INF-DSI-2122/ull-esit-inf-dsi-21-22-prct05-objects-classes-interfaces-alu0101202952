@@ -27,7 +27,7 @@ export class Pokemon {
      * Setter nombre del pokemon
      * @param nombre del pokemon
      */
-    setNombre(nombre: string) {
+    public setNombre(nombre: string) {
         this.nombre = nombre;
     }
 
@@ -35,7 +35,7 @@ export class Pokemon {
      * Getter del nombre del pokemon
      * @returns nombre del pokemon
      */
-    getNombre(){
+    public getNombre(){
         return this.nombre;
     }
 
@@ -43,7 +43,7 @@ export class Pokemon {
      * Setter peso del pokemon
      * @param peso del pokemon
      */
-    setPeso(peso: number) {
+    public setPeso(peso: number) {
         this.peso = peso;
     }
 
@@ -51,7 +51,7 @@ export class Pokemon {
      * Getter del peso del pokemon
      * @returns peso del pokemon
      */
-    getPeso(){
+    public getPeso(){
         return this.peso;
     }
 
@@ -59,7 +59,7 @@ export class Pokemon {
      * Setter altura del pokemon
      * @param altura del pokemon
      */
-    setAltura(altura: number) {
+    public setAltura(altura: number) {
         this.altura = altura;
     }
 
@@ -67,7 +67,7 @@ export class Pokemon {
      * Getter de la altura del pokemon
      * @returns altura del pokemon
      */
-    getAltura(){
+    public getAltura(){
         return this.altura;
     }
 
@@ -75,7 +75,7 @@ export class Pokemon {
      * Setter tipo del pokemon
      * @param tipo del pokemon
      */
-    setTipo(tipo: string) {
+    public setTipo(tipo: string) {
         this.tipo = tipo;
     }
 
@@ -83,7 +83,7 @@ export class Pokemon {
      * Getter del tipo del pokemon
      * @returns tipo del pokemon
      */
-    getTipo(){
+    public getTipo(){
         return this.tipo;
     }
 
