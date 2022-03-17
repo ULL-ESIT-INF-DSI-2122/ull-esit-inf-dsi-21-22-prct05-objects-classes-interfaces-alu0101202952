@@ -43,7 +43,7 @@ export class Pokemon {
      * Setter peso del pokemon
      * @param peso del pokemon
      */
-     setPeso(peso: number) {
+    setPeso(peso: number) {
         this.peso = peso;
     }
 
@@ -59,7 +59,7 @@ export class Pokemon {
      * Setter altura del pokemon
      * @param altura del pokemon
      */
-     setAltura(altura: number) {
+    setAltura(altura: number) {
         this.altura = altura;
     }
 
@@ -71,6 +71,21 @@ export class Pokemon {
         return this.altura;
     }
 
+     /**
+     * Setter tipo del pokemon
+     * @param tipo del pokemon
+     */
+    setTipo(tipo: string) {
+        this.tipo = tipo;
+    }
+
+    /**
+     * Getter del tipo del pokemon
+     * @returns tipo del pokemon
+     */
+    getTipo(){
+        return this.tipo;
+    }
 
 }
 
@@ -91,3 +106,7 @@ pokemon1.getPeso();
 pokemon1.setAltura(0.7);
 console.log(pokemon1);
 pokemon1.getAltura();
+
+pokemon1.setTipo('Fuego(llama)');
+console.log(pokemon1);
+pokemon1.getTipo();
