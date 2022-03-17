@@ -105,18 +105,34 @@ export class Pokemon {
         return this.estadisticas;
     }
 
+    /**
+     * Getter del ataque del pokemon
+     * @returns ataque del pokemon
+     */
     public getAtaque(){
         return this.estadisticas.ataque;
     }
 
+    /**
+     * Getter de ladefensa del pokemon
+     * @returns defensa del pokemon
+     */
     public getDefensa(){
         return this.estadisticas.defensa;
     }
 
+    /**
+     * Getter de la velocidad del pokemon
+     * @returns velocidad del pokemon
+     */
     public getVelocidad(){
         return this.estadisticas.velocidad;
     }
 
+    /**
+     * Getter del daño máximo del pokemon
+     * @returns daño máximo del pokemon
+     */
     public getHP(){
         return this.estadisticas.hp;
     }
