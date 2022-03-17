@@ -16,5 +16,9 @@ describe('Pokemon', () => {
     it('pokemon1.getAltura() returns altura del pokemon', () => {
       return expect(pokemon1.getAltura()).to.be.equal(0.9);
     })
+
+    it('pokemon1.getTipo() returns tipo del pokemon', () => {
+      return expect(pokemon1.getTipo()).to.be.equal('Fuego');
+    })
   
 });
