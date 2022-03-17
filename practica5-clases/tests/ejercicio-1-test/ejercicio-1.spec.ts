@@ -12,5 +12,9 @@ describe('Pokemon', () => {
     it('pokemon1.getPeso() returns peso del pokemon', () => {
       return expect(pokemon1.getPeso()).to.be.equal(25);
     })
+
+    it('pokemon1.getAltura() returns altura del pokemon', () => {
+      return expect(pokemon1.getAltura()).to.be.equal(0.9);
+    })
   
 });
