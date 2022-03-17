@@ -71,7 +71,7 @@ export class Pokemon {
         return this.altura;
     }
 
-     /**
+    /**
      * Setter tipo del pokemon
      * @param tipo del pokemon
      */
@@ -85,6 +85,40 @@ export class Pokemon {
      */
     public getTipo(){
         return this.tipo;
+    }
+
+    /**
+     * Setter Estadísticas del pokemon
+     * @param estadisticas del pokemon
+     */
+    public setEstadisticas(estadisticas: number []) {
+        estadisticas.forEach(elemento => {
+            estadisticas.push(elemento);
+        })
+    }
+
+    /**
+     * Getter de las estadísticas del pokemon
+     * @returns estadisticas del pokemon
+     */
+    public getEstadisticas(){
+        return this.estadisticas;
+    }
+
+    public getAtaque(){
+        return this.estadisticas.ataque;
+    }
+
+    public getDefensa(){
+        return this.estadisticas.defensa;
+    }
+
+    public getVelocidad(){
+        return this.estadisticas.velocidad;
+    }
+
+    public getHP(){
+        return this.estadisticas.hp;
     }
 
 }
@@ -110,3 +144,7 @@ pokemon1.getAltura();
 pokemon1.setTipo('Fuego(llama)');
 console.log(pokemon1);
 pokemon1.getTipo();
+
+pokemon1.setEstadisticas([131, 61, 66, 66]);
+console.log(pokemon1);
+pokemon1.getEstadisticas();
