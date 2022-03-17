@@ -55,6 +55,23 @@ export class Pokemon {
         return this.peso;
     }
 
+    /**
+     * Setter altura del pokemon
+     * @param altura del pokemon
+     */
+     setAltura(altura: number) {
+        this.altura = altura;
+    }
+
+    /**
+     * Getter de la altura del pokemon
+     * @returns altura del pokemon
+     */
+    getAltura(){
+        return this.altura;
+    }
+
+
 }
 
 
@@ -70,3 +87,7 @@ pokemon1.getNombre();
 pokemon1.setPeso(27);
 console.log(pokemon1);
 pokemon1.getPeso();
+
+pokemon1.setAltura(0.7);
+console.log(pokemon1);
+pokemon1.getAltura();
