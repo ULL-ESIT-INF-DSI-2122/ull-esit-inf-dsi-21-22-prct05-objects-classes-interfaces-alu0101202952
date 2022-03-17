@@ -4,7 +4,7 @@ import {Pokemon} from '../../src/ejercicio-1/pokemon';
 import {Pokedex} from '../../src/ejercicio-1/pokedex';
 
 let pokemon1 = new Pokemon('Flareon', 25, 0.9, 'Fuego', [130, 60, 65, 65]);
-let pokedex = new Pokedex([pokemon1]);
+let pokedex = new Pokedex('Flareon', 25, 0.9, 'Fuego', [130, 60, 65, 65],[pokemon1]);
 
 describe('Pokemon', () => {
   it('pokemon1.getNombre() returns nombre del pokemon', () => {
