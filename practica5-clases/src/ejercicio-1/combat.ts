@@ -24,12 +24,12 @@ export class Combat {
             efectividad2 = efectividad2 * 0.5;
         }
 
+   
         daño_pokemon1 = 50 * (this.pokemon1.getAtaque() / this.pokemon2.getDefensa()) * efectividad1;
         daño_pokemon1 = Math.round(daño_pokemon1);
         daño_pokemon2 = 50 * (this.pokemon2.getAtaque() / this.pokemon1.getDefensa()) * efectividad2;
         daño_pokemon2 = Math.round(daño_pokemon2);
-
-
+        
         console.log('El tipo de tu pokemon es: '+this.pokemon1.getTipo()+'\nContra un pokemon oponente del tipo: '+this.pokemon2.getTipo()+'\nTu ataque es: '+this.pokemon1.getAtaque()+'\nContra la defensa de tu rival: '+this.pokemon2.getDefensa());
 
         console.log('\nTu pokemon causa un daño de '+daño_pokemon1);
