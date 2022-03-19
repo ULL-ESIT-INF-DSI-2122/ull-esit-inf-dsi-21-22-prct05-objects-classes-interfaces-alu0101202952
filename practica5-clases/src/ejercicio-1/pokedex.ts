@@ -26,4 +26,4 @@ let pokedex = new Pokedex([pokemon1]);
 
 pokedex.setPokemons(pokemon1);
 console.log(pokedex);
-pokedex.getPokemons();
+console.log(pokedex.getPokemons());

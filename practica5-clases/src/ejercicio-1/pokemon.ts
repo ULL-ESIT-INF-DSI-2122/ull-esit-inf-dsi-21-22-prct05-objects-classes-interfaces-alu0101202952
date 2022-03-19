@@ -147,20 +147,20 @@ let pokemon1 = new Pokemon('Flareon', 25, 0.9, 'Fuego', [130, 60, 65, 65]);
 console.log(pokemon1);
 pokemon1.setNombre('Flareon (Eeveevolución)');
 console.log(pokemon1);
-pokemon1.getNombre();
+console.log(pokemon1.getNombre());
 
 pokemon1.setPeso(27);
 console.log(pokemon1);
-pokemon1.getPeso();
+console.log(pokemon1.getPeso());
 
 pokemon1.setAltura(0.7);
 console.log(pokemon1);
-pokemon1.getAltura();
+console.log(pokemon1.getAltura());
 
 pokemon1.setTipo('Fuego(llama)');
 console.log(pokemon1);
-pokemon1.getTipo();
+console.log(pokemon1.getTipo());
 
 pokemon1.setEstadisticas([131, 61, 66, 66]);
 console.log(pokemon1);
-pokemon1.getEstadisticas();
+console.log(pokemon1.getEstadisticas());
