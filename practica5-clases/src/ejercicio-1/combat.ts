@@ -1,9 +1,19 @@
 import { Pokemon } from "./pokemon";
 
+/**
+ * EJERCICIO 1.
+ * @class Combat, tiene las especificaciones del combate entre ambos pokemons
+ * @param pokemon1 tiene las características del pokemon 1 (tuyo)
+ * @param pokemon2 tiene las características del pokemon 2 (rival)
+ */
 export class Combat {
     constructor(private pokemon1: Pokemon, private pokemon2: Pokemon){
     }
 
+    /**
+     * Método público que inicializa el combate pokemon
+     * @returns el daño que se inflige en el combate
+     */
     public start(){
         let efectividad1: number = 1;
         let efectividad2: number = 1;
