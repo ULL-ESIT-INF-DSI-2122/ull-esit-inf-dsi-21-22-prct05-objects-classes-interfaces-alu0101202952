@@ -34,7 +34,14 @@ export class Juego extends Tablero{
         }
     }
 
-
+    /**
+     * Método público que coloca las fichas con sus colores
+     * @param tablero en el que se coloca
+     * @param columna en la que se coloca
+     * @param jugador que coloca la pieza de un determinado color
+     * @returns true al colocarlo
+     * @returns false al no
+     */
     public colocarPieza(tablero: Tablero, columna: number, jugador: number){
         let color = COLOR_1;
         if(jugador == JUGADOR_2) {
@@ -44,10 +51,10 @@ export class Juego extends Tablero{
                     tablero.pushFicha(parseInt(color));
                 }
             }
-        } if(this.getFilas() == -1) {
+            return true;
+        } else {
             return false;
-        } 
-        return true;
+        }
     }
 
     

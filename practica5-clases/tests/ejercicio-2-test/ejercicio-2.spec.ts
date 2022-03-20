@@ -29,5 +29,6 @@ describe('Juego Conecta 4', () => {
   it('juego.colocarPieza() returns el tablero con el nuevo movimiento', () => {
     return expect(juego.colocarPieza(tablero, 1, JUGADOR_1)).to.be.false;
   })
+  
 
 });
