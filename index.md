@@ -244,11 +244,15 @@ Para usar Coveralls se instaló la dependencia correspondiente mediante ```npm i
 
 Luego cuando se sube, el código actualizado al GitHub es necesario hacer público el repositorio para que en la página de Coveralls aparezca el repo asociado. Lo siguiente es guardar el token que se genera en un fichero __.coveralls.yml__ que se crea en la raíz del directorio de trabajo.
 
+!
+
 Y para mejorar se añade en el package.json una línea para ejecutar el cubrimiento de forma más completa. Con __"coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output"__
 
 Este cubrimiento da a lugar al siguiente de esta práctica:
 
 !
+
+Y al rato estaría enganchado el repositorio a la web de Coveralls.
 
 
 ## DESARROLLO DEL INFORME CON GITHUB PAGES
