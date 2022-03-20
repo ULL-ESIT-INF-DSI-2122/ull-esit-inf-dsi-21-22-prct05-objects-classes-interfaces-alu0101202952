@@ -1,3 +1,5 @@
+
+
 /**
  * EJERCICIO 2. Conecta 4
  * @class Tablero, tiene la generación del tablero a trabajar
@@ -20,7 +22,12 @@ export class Tablero{
     }
 
     public getFilas(){
-        return
+        for (let i: number = this.filas; i >= 0; i--) {
+            if (tablero.columnas != null) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
 
@@ -30,3 +37,5 @@ export class Tablero{
 let tablero = new Tablero(6,7);
 tablero.generarTablero();
 console.log(tablero);
+
+console.log(tablero.getFilas());
