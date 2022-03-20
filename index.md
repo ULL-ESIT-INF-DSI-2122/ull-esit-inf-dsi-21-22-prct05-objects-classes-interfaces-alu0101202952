@@ -533,7 +533,9 @@ Siguiendo los pasos del informe 1 para crear la GitHub Pages así se prosiguió.
 
 ## DIFICULTADES
 
-En esta práctica las dificultades que se presentaron fue en el planteamiento de cómo realizar el ejercicio 2 "Conecta 4" en específico la decisión del ganador, ya que a nivel de clases se tiene que asociar colores con jugadores y estos definirse como ganador a las 4 primeras fichas consecutivas del mismo color. 
+En esta práctica las dificultades que se presentaron fue en el planteamiento de cómo realizar el ejercicio 2 "Conecta 4" en específico la decisión del ganador, ya que a nivel de clases se tiene que asociar colores con jugadores y estos definirse como ganador a las 4 primeras fichas consecutivas del mismo color. Además resultó no mostrarse correctamente enganchado a Coveralls el repositorio. Mostrándose este error.
+
+!
 
 
 ## CONCLUSIONES
