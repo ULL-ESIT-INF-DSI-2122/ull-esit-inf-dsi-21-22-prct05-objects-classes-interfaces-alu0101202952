@@ -14,6 +14,10 @@ describe('Tablero Conecta 4', () => {
   it('tablero.getFilas() returns filas', () => {
     return expect(tablero.getFilas()).to.be.equal(6);
   })
+
+  it('tablero.getColumnas() returns columnas', () => {
+    return expect(tablero.getColumnas()).to.be.equal(7);
+  })
 });
 /*
 describe('Juego Conecta 4', () => {

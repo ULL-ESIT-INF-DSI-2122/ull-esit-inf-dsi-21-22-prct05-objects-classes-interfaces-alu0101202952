@@ -21,6 +21,10 @@ export class Tablero{
         }
     }
 
+    /**
+     * Getter filas que no sean nulas
+     * @returns filas
+     */
     public getFilas(){
         for (let i: number = this.filas; i >= 0; i--) {
             if (tablero.columnas != null) {
