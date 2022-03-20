@@ -33,6 +33,15 @@ export class Tablero{
         }
         return -1;
     }
+
+    public getColumnas(){
+        for (let i: number = this.columnas; i >= 0; i--) {
+            if (tablero.filas != null) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
 
 /**
@@ -43,3 +52,4 @@ tablero.generarTablero();
 console.log(tablero);
 
 console.log(tablero.getFilas());
+console.log(tablero.getColumnas());
