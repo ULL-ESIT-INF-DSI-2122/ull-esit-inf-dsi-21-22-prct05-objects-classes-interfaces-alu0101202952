@@ -26,9 +26,13 @@ describe('Juego Conecta 4', () => {
   it('juego.columnaLLena() returns se valida si la columna está llena o no', () => {
       return expect(juego.columnaLLena(tablero, 1)).to.be.true;
   })
+
   it('juego.colocarPieza() returns el tablero con el nuevo movimiento', () => {
     return expect(juego.colocarPieza(tablero, 1, JUGADOR_1)).to.be.false;
   })
-  
+
+  it('juego.ganador() returns comprueba si hay 4 fichas del mismo color', () => {
+    return expect(juego.ganador()).to.be.true;
+  })
 
 });
