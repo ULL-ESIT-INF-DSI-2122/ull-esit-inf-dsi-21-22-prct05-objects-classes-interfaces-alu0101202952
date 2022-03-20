@@ -18,6 +18,10 @@ export class Tablero{
             }
         }
     }
+
+    public getFilas(){
+        return
+    }
 }
 
 /**

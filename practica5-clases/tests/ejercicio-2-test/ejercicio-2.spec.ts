@@ -11,6 +11,9 @@ describe('Tablero Conecta 4', () => {
       return expect(tablero.generarTablero()).to.be.eql('Flareon');
   })
 
+  it('tablero.getFilas() returns filas', () => {
+    return expect(tablero.getFilas()).to.be.equal(undefined);
+  })
 });
 
 describe('Juego Conecta 4', () => {
