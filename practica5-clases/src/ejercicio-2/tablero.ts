@@ -34,6 +34,10 @@ export class Tablero{
         return -1;
     }
 
+    /**
+     * Getter columnas que no sean nulas
+     * @returns columnas
+     */
     public getColumnas(){
         for (let i: number = this.columnas; i >= 0; i--) {
             if (tablero.filas != null) {
