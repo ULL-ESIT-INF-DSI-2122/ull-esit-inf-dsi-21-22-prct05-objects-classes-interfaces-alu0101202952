@@ -29,5 +29,8 @@ export class Juego extends Tablero{
         }
     }
 
+
+    
+
     
 }

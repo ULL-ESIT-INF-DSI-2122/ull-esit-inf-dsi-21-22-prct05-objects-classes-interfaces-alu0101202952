@@ -17,6 +17,7 @@ export class Tablero{
                 tablero.push(i*j);
             }
         }
+        return tablero;
     }
 
     /**
