@@ -21,8 +21,8 @@ describe('Tablero Conecta 4', () => {
 });
 
 describe('Juego Conecta 4', () => {
-  it('juego.turno() returns se valida si la columna está llena o no', () => {
-      return expect(juego.turno(tablero, 1)).to.be.true;
+  it('juego.columnaLLena() returns se valida si la columna está llena o no', () => {
+      return expect(juego.columnaLLena(tablero, 1)).to.be.true;
   })
 
 });

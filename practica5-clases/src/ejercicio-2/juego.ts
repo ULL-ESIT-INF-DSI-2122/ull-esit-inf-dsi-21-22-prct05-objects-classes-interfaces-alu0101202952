@@ -19,7 +19,7 @@ export class Juego extends Tablero{
      * @returns true si está llena
      * @returns false si está vacía
      */
-    public turno(tablero: Tablero, columna: number){
+    public columnaLLena(tablero: Tablero, columna: number){
         const columnaLlena = tablero.getColumnas(columna);
         if(columnaLlena == -1 || columna ==-1) { //La fila está llena se marca un error para rellena  
             console.log('La columna está llena, no se puede introducir ficha');
