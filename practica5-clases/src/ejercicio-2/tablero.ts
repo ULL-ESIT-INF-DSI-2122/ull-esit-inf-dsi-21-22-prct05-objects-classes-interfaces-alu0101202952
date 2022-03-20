@@ -7,7 +7,7 @@
  * @param columnas del tablero (7)
  */
 export class Tablero{
-    constructor (private filas: number, private columnas: number){}
+    constructor (protected filas: number, protected columnas: number){}
 
     /**
      * Método público que genera el tablero llenando el array con el espacio reservado de filas y columnas
@@ -27,7 +27,7 @@ export class Tablero{
      */
     public getFilas(){
         for (let i: number = this.filas; i >= 0; i--) {
-            if (tablero.columnas != null) {
+            if (tablero.columnas == null) {
                 return i;
             }
         }
@@ -38,9 +38,9 @@ export class Tablero{
      * Getter columnas que no sean nulas
      * @returns columnas
      */
-    public getColumnas(){
+    public getColumnas(columna: number){
         for (let i: number = this.columnas; i >= 0; i--) {
-            if (tablero.filas != null) {
+            if (tablero.filas == null || columna == null) {
                 return i;
             }
         }
@@ -56,4 +56,4 @@ tablero.generarTablero();
 console.log(tablero);
 
 console.log(tablero.getFilas());
-console.log(tablero.getColumnas());
+console.log(tablero.getColumnas(1));
