@@ -57,22 +57,33 @@ export class Juego extends Tablero{
         }
     }
 
+    /**
+     * Método público comprobar que el ganador tiene 4 fichas seguidas del mismo color
+     * @param tablero sobre el que se comprueba 
+     * @param columna que se le pasa
+     * @param jugador que puntúa con el color
+     */
     public ganador(tablero: Tablero, columna: number, jugador: number){
         let contador: number = 0;
         let color = COLOR_1;
         while(contador) {
             this.colocarPieza(tablero, columna, jugador);
             contador++;
+            return true;
         } 
         if (contador >= 8){
-            
+
         }
+        return false;
     }
     
 }
 
-
+/**
+ * Salida por pantalla
+ */
 let tablero = new Tablero(6,7);
 let juego = new Juego(tablero, 6, 7);
 
 console.log(juego.colocarPieza(tablero, 1, 1));
+console.log(juego.ganador(tablero, 1, 1));
