@@ -3,6 +3,8 @@ import {expect} from 'chai';
 import {Tablero} from '../../src/ejercicio-2/tablero';
 import {Juego} from '../../src/ejercicio-2/juego';
 
+const JUGADOR_1 = 1
+
 let tablero = new Tablero(6,7);
 let juego = new Juego(tablero, 6, 7);
 
@@ -25,7 +27,7 @@ describe('Juego Conecta 4', () => {
       return expect(juego.columnaLLena(tablero, 1)).to.be.true;
   })
   it('juego.colocarPieza() returns el tablero con el nuevo movimiento', () => {
-    return expect(juego.colocarPieza(tablero, 1, jugador1)).to.be.true;
+    return expect(juego.colocarPieza(tablero, 1, JUGADOR_1)).to.be.false;
   })
 
 });

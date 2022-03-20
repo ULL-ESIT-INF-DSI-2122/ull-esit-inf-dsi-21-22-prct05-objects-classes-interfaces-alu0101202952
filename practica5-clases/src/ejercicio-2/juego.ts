@@ -1,5 +1,10 @@
 import { Tablero } from "./tablero";
 
+const JUGADOR_1 = 1
+const JUGADOR_2 = 2
+const COLOR_1 = 'Rojo'
+const COLOR_2 = 'Amarillo'
+
 /**
  * EJERCICIO 2. Conecta 4
  * @class Juego, hereda de class Tablero
@@ -30,7 +35,26 @@ export class Juego extends Tablero{
     }
 
 
-    
+    public colocarPieza(tablero: Tablero, columna: number, jugador: number){
+        let color = COLOR_1;
+        if(jugador == JUGADOR_2) {
+            color == COLOR_2;
+            for(let i: number = 0; i < this.getFilas(); i++) {
+                for(let j: number = 0; j < this.getColumnas(columna); j++) {
+                    tablero.pushFicha(parseInt(color));
+                }
+            }
+        } if(this.getFilas() == -1) {
+            return false;
+        } 
+        return true;
+    }
 
     
 }
+
+
+let tablero = new Tablero(6,7);
+let juego = new Juego(tablero, 6, 7);
+
+console.log(juego.colocarPieza(tablero, 1, 1));

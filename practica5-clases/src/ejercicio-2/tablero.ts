@@ -17,7 +17,15 @@ export class Tablero{
                 tablero.push(i*j);
             }
         }
-        return tablero;
+    }
+
+    public pushFicha(elemento: number){
+        let tablero: number [] = [];
+        for (let i: number = 0; i < this.filas; i++) {
+            for (let j: number = 0; j < this.columnas; j++) {
+                tablero.push(elemento);
+            }
+        }
     }
 
     /**
