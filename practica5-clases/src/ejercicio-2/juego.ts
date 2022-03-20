@@ -57,6 +57,17 @@ export class Juego extends Tablero{
         }
     }
 
+    public ganador(tablero: Tablero, columna: number, jugador: number){
+        let contador: number = 0;
+        let color = COLOR_1;
+        while(contador) {
+            this.colocarPieza(tablero, columna, jugador);
+            contador++;
+        } 
+        if (contador >= 8){
+            
+        }
+    }
     
 }
 
