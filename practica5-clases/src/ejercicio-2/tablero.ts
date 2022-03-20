@@ -1,5 +1,3 @@
-
-
 /**
  * EJERCICIO 2. Conecta 4
  * @class Tablero, tiene la generación del tablero a trabajar
