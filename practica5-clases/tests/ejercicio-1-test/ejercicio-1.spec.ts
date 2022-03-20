@@ -30,21 +30,21 @@ describe('Pokemon', () => {
   })
 
   it('pokemon1.getEstadisticas() returns estadísticas del pokemon', () => {
-    return expect(pokemon1.getEstadisticas()).to.be.eql([130, 60, 65, 65]);
+    return expect(pokemon1.getEstadisticas()).to.be.eql({ ataque: 130, defensa: 60, velocidad: 65, hp: 65});
   })
   
 });
 
 describe('Pokedex', () => {
   it('pokedex.getPokemons() returns pokemons de la pokedex', () => {
-    return expect(pokedex.getPokemons()).to.be.eql([pokemon1]);
+    return expect(pokedex.getPokemons()).to.be.eql([pokemon1, pokemon2]);
   })
 
 });
 
 describe('Combat, describe el combate entre dos pokemon', () => {
-  it('combate.start() returns pokemons daño es igual a ', () => {
-    return expect(combate.start()).to.be.eql(undefined);
+  it('combate.start() returns pokemons daño es igual a 100', () => {
+    return expect(combate.start()).to.be.eql(100);
   })
 
 });

@@ -34,9 +34,9 @@ export class Pokedex{
 /**
  * Salidas por pantalla
  */
-let pokemon1 = new Pokemon('Flareon', 25, 0.9, 'Fuego', [130, 60, 65, 65]);
+/*let pokemon1 = new Pokemon('Flareon', 25, 0.9, 'Fuego', [130, 60, 65, 65]);
 let pokedex = new Pokedex([pokemon1]);
 
 pokedex.setPokemons(pokemon1);
 console.log(pokedex);
-console.log(pokedex.getPokemons());
+console.log(pokedex.getPokemons());*/
