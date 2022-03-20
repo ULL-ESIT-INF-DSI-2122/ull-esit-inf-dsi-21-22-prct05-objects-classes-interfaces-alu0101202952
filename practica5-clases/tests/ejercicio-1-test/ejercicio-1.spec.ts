@@ -32,7 +32,6 @@ describe('Pokemon', () => {
   it('pokemon1.getEstadisticas() returns estadísticas del pokemon', () => {
     return expect(pokemon1.getEstadisticas()).to.be.eql({ ataque: 130, defensa: 60, velocidad: 65, hp: 65});
   })
-  
 });
 
 describe('Pokedex', () => {

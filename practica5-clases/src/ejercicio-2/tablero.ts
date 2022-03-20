@@ -19,6 +19,10 @@ export class Tablero{
         }
     }
 
+    /**
+     * Método público pushFicha para meter las fichas
+     * @param elemento ficha que se introduce
+     */
     public pushFicha(elemento: number){
         let tablero: number [] = [];
         for (let i: number = 0; i < this.filas; i++) {

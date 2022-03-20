@@ -32,7 +32,7 @@ describe('Juego Conecta 4', () => {
   })
 
   it('juego.ganador() returns comprueba si hay 4 fichas del mismo color', () => {
-    return expect(juego.ganador(tablero, 1, JUGADOR_1)).to.be.true;
+    return expect(juego.ganador(tablero, 1, JUGADOR_1)).to.be.false;
   })
 
 });
